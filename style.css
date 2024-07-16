@@ -35,10 +35,12 @@ a {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: stretch;
+    background-color: #1E2025;
 }
 
 div {
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 .button,
@@ -47,6 +49,7 @@ div {
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    background-color: #92A4B1;
 }
 
 .input-output-container {
@@ -55,6 +58,10 @@ div {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: stretch;
+    background-color: #92A4B1;
+}
+
+.copyright{
 }
 
 .input-output-container > div {
@@ -65,9 +72,9 @@ div {
     border: none;
 }
 
-.input-output-container > div > p {
+/* .input-output-container > div > p {
 
-}
+} */
 
 .button {
     flex: 1 1 25%
@@ -87,8 +94,30 @@ div {
     text-align: left;
     padding: 10px;
     border-top: 1px solid black !important;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: #5A7480;
 }
 
 .copyright > span {
     width: 100%;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #768590;
+}
+
+.operator:hover,
+.percentage:hover {
+    background-color: #b4befe;
+}
+
+.equal:hover {
+    background-color: #a6e3a1;
+}
+
+.clear:hover,
+.delete:hover {
+    background-color: #f38ba8;
 }
