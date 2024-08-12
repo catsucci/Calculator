@@ -1,56 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <div class="calculator-container">
-      <div class="input-output-container">
-        <div class="operation-container">
-          <p class="operation"></p>
-        </div>
-        <div class="input-container result-container">
-          <p class="user-input result">0</p>
-        </div>
-        <!-- <div class="copyright">
-            <span>
-                Made By <a href="https://github.com/catsucci">
-                    <span>Catsucci</span>
-                    <img src="./drawables/icons/mdi_github.svg" alt="GitHub icon">
-                </a>
-            </span>
-        </div> -->
-      </div>
-
-      <div class="buttons-wrapper">
-        <div class="button clear"><span>AC</span></div>
-        <div class="button delete"><span>Delete</span></div>
-        <div class="button percentage"><span>%</span></div>
-        <div class="button operator devide"><span>/</span></div>
-
-        <div class="button number"><span>1</span></div>
-        <div class="button number"><span>2</span></div>
-        <div class="button number"><span>3</span></div>
-        <div class="button operator multiply"><span>*</span></div>
-
-        <div class="button number"><span>4</span></div>
-        <div class="button number"><span>5</span></div>
-        <div class="button number"><span>6</span></div>
-        <div class="button operator subtraction"><span>-</span></div>
-
-        <div class="button number"><span>7</span></div>
-        <div class="button number"><span>8</span></div>
-        <div class="button number"><span>9</span></div>
-        <div class="button operator addition"><span>+</span></div>
-
-        <div class="button number"><span>0</span></div>
-        <div class="button dot"><span>.</span></div>
-        <div class="button equal"><span>=</span></div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
     </div>
-  </body>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two">=</button>
+  </div>
+</body>
 </html>
